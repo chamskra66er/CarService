@@ -1,0 +1,47 @@
+{
+  "_from": "@clr/ui",
+  "_id": "@clr/ui@3.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-7W0K+eA2uNV1eL+se8eopaaN/TmWk7mYC6hynkq5YSE1S5SquNmcRLvKgpojdLpS9jXVBszO1xWlQtCpxd4BGg==",
+  "_location": "/@clr/ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@clr/ui",
+    "name": "@clr/ui",
+    "escapedName": "@clr%2fui",
+    "scope": "@clr",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@clr/ui/-/ui-3.1.0.tgz",
+  "_shasum": "3c05a090dfaecdec5483f862988a18819bc466ca",
+  "_spec": "@clr/ui",
+  "_where": "C:\\Users\\admin\\Desktop\\TestTask\\CarService\\ServerApp\\wwwroot\\clarity",
+  "author": {
+    "name": "clarity"
+  },
+  "bugs": {
+    "url": "https://github.com/vmware/clarity/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "CSS for Clarity",
+  "homepage": "https://clarity.design",
+  "license": "MIT",
+  "name": "@clr/ui",
+  "peerDependencies": {
+    "@clr/icons": "3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vmware/clarity.git"
+  },
+  "version": "3.1.0"
+}

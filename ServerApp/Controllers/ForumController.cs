@@ -24,6 +24,11 @@ namespace ServerApp.Controllers
         {
             return _forumService.GetById(id);
         }
+        [HttpGet]
+        public IEnumerable<Forum> GetForum()
+        {
+            return _forumService.GetAll();
+        }
 
     }
 }

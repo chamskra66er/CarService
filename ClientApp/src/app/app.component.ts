@@ -14,4 +14,7 @@ export class AppComponent {
   get forum(): Forum {
     return this.repo.forum;
   }
+  get forums(): Forum[] {
+    return this.repo.forums;
+  }
 }

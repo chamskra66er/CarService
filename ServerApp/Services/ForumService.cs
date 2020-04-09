@@ -27,7 +27,9 @@ namespace ServerApp.Services
         public Forum GetById(int id)
         {
             var forum = _context.Forums.Where(f => f.Id == id)
+                .Include(l => l.Images).Where(l => l.Images.Id == id)
                 .FirstOrDefault();
+                
             return forum;
         }
 

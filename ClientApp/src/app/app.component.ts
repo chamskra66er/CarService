@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Repository } from "./models/repository";
-import { Forum } from "./models/forum.model";
+import { Repository } from './models/repository';
+import { Forum } from './models/forum.model';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +10,8 @@ import { Forum } from "./models/forum.model";
 export class AppComponent {
 
   constructor(private repo: Repository) { }
+
   get forum(): Forum {
     return this.repo.forum;
   }
-  title = 'CarService';
 }

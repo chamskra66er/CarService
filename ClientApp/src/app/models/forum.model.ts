@@ -2,16 +2,16 @@ import { Image } from "./image.model";
 
 export class Forum {
   constructor(
-    public Id?: number,
-    public Title?: string,
-    public Description?:string,
-    public VideoUrl?: string,
-    public FileUrl?: string,
-    public ImageUrl?:string,
-    public Path?:string,
-    public Value?:string,
-    public Comment?:string,
-    public DateCreate?:Date,
-    public DateFinish?:Date, 
-    public Images?:Image ) {}
+    public id?: number,
+    public title?: string,
+    public description?:string,
+    public videoUrl?: string,
+    public fileUrl?: string,
+    public imageUrl?: string,
+    public path?: string,
+    public value?: string,
+    public comment?: string,
+    public dateCreate?: Date,
+    public dateFinish?: Date, 
+    public images?: Image ) {}
 }

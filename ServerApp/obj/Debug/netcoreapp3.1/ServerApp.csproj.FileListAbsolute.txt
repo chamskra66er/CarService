@@ -64,6 +64,13 @@ C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Mic
 C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Npgsql.dll
 C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\admin\Desktop\TestTask\CarService\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\admin\Desktop\TestTask\CarService\ServerApp\obj\Debug\netcoreapp3.1\ServerApp.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\TestTask\CarService\ServerApp\obj\Debug\netcoreapp3.1\ServerApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\admin\Desktop\TestTask\CarService\ServerApp\obj\Debug\netcoreapp3.1\ServerApp.MvcApplicationPartsAssemblyInfo.cache

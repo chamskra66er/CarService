@@ -1,10 +1,16 @@
-import { Forum } from "./forum.model";
+import { Forum } from './forum.model';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
+@Injectable()
 export class Repository {
-
-  constructor() {
-    this.forum = JSON.parse(document.getElementById("data").textContent);
+  forum: Forum;
+  constructor(private http: HttpClient) {
+    this.getForum(1);
   }
 
-  forum: Forum;
+  getForum(id: number) {
+    this.http.get<Forum>("api/forums/" + id)
+      .subscribe(p => this.forum = p);
+  }
 }

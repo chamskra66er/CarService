@@ -24,7 +24,7 @@ namespace ServerApp.Controllers
         public IActionResult Index()
         {
             var products = _forumService.GetAll();
-            return View(products);
+            return View(products.First());
         }
 
         public IActionResult Privacy()

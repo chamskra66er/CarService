@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using ServerApp.Data;
 using Microsoft.EntityFrameworkCore;
 using ServerApp.Services;
+using Microsoft.OpenApi.Models;
 
 namespace ServerApp
 {
@@ -30,9 +31,20 @@ namespace ServerApp
             string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(connectionString));
+
+            services.AddControllersWithViews()
+                .AddJsonOptions(opts => {
+                    opts.JsonSerializerOptions.IgnoreNullValues = true;
+                }).AddNewtonsoftJson();
+
             services.AddScoped<IForum, ForumService>();
-            services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1",
+                    new OpenApiInfo { Title = "CarService API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +72,13 @@ namespace ServerApp
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(options => {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json",
+                    "CarService API");
+            });
+
             //app.UseSpa(spa =>
             //{
             //    spa.Options.SourcePath = "../ClientApp";
@@ -71,7 +90,7 @@ namespace ServerApp
                     .GetValue<string>("DevTools:ConnectionStrategy");
                 if (strategy == "proxy")
                 {
-                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");//http://127.0.0.1:4200
+                    spa.UseProxyToSpaDevelopmentServer("http://127.0.0.1:4200");//http://127.0.0.1:4200
                 }
                 else if (strategy == "managed")
                 {

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Repository } from './models/repository';
 import { Forum } from './models/forum.model';
+import { Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-root',

@@ -38,7 +38,6 @@ namespace ServerApp.Services
 
         public IEnumerable<Forum> GetAll() =>
             _context.Forums.Include(l=>l.Images);
-        //.Include(f => f.ImageUrl);
 
 
         public Task UpdateForumDescription(int forumId, string newDescription)

@@ -11,5 +11,7 @@ namespace ServerApp.Services
         Image GetById(int id);
         Image Delete(int id);
         Task Update(Image image, int id);
+        Task Add(Image image);
+        IEnumerable<Image> GetAll();
     }
 }

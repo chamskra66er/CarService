@@ -14,6 +14,12 @@ namespace ServerApp.Services
             _context = context;
         }
 
+        public async Task Add(Image image)
+        {
+            _context.Add(image);
+            await _context.SaveChangesAsync();
+        }
+
         public Image Delete(int id)
         {
             var image = GetById(id);
@@ -23,6 +29,11 @@ namespace ServerApp.Services
                 _context.SaveChanges();
             }
             return image;
+        }
+
+        public IEnumerable<Image> GetAll()
+        {
+            return _context.Images;
         }
 
         public Image GetById(int id)

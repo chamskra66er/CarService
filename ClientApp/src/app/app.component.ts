@@ -18,4 +18,9 @@ export class AppComponent {
   get forums(): Forum[] {
     return this.repo.forums;
   }
+  createForum() {
+    this.repo.createForum(new Forum(0, "Ford", "test", "testvideo", "testfile", "testimage",
+      "testpath", "testvalue", "testcomment", new Date(2020 - 12 - 5), new Date(2020 - 12 - 8),
+    ))
+  }
 }
